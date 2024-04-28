@@ -11,5 +11,6 @@ public class Hooks {
 	{	
 
 		System.setProperty("log4j.configurationFile","log4j2.xml");
+		System.out.println("Inside Hooks/Before method");
 	}
 }

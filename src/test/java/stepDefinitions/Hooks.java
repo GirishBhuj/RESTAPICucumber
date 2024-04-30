@@ -2,6 +2,8 @@ package stepDefinitions;
 
 import java.io.IOException;
 import org.apache.logging.log4j.*;
+
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
 public class Hooks {
@@ -12,5 +14,12 @@ public class Hooks {
 
 		System.setProperty("log4j.configurationFile","log4j2.xml");
 		System.out.println("Inside Hooks/Before method");
+	}
+	
+	@After()
+	public void AfterScenario() throws IOException
+	{	
+
+		System.out.println("Inside Hooks/After method");
 	}
 }

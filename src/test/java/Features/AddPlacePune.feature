@@ -10,6 +10,6 @@ Scenario: Verify if Place is being Succesfully added using AddPlaceAPI
 	
 Examples:
 	|name 	 | language |address		       |
-	|Bantahouse |  Kolhapur |Manu City mart mall|
+	|Bantahouse |  Kolhapur |Manu City mart|
 #	|BBhouse | Spanish  |Sea cross center  |
 	 

@@ -20,6 +20,6 @@ public class Hooks {
 	public void AfterScenario() throws IOException
 	{	
 
-		System.out.println("Inside Hooks/After method");
+		System.out.println("Inside Hooks/After method. now what to do");
 	}
 }

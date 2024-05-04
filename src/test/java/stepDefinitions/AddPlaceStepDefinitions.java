@@ -32,7 +32,7 @@ public class AddPlaceStepDefinitions extends Utils {
 	public void add_place_payload_with(String name, String language, String address) throws InterruptedException, IOException
 	{
 		//System.out.println("===> inside add_place_payload_with ");
-  		logger.info("Inside Add place payload with name: "+name +" Language:"+ language + " Address"+ address);
+  		logger.info("Inside Add place payload usig name: "+name +" Language:"+ language + " Address"+ address);
 		mReqSpec = given().spec(CreateRequestSpecification()).
 				body(TestData.addPlacePayLoad(name, language, address));	
 	}

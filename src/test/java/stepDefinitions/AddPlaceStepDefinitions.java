@@ -32,7 +32,7 @@ public class AddPlaceStepDefinitions extends Utils {
 	public void add_place_payload_with(String name, String language, String address) throws InterruptedException, IOException
 	{
 		//System.out.println("===> inside add_place_payload_with ");
-  		logger.info("Inside Add place payload usig name: "+name +" Language:"+ language + " Address"+ address);
+  		logger.info("Inside Add place payload for name: "+name +" Language:"+ language + " Address"+ address);
 		mReqSpec = given().spec(CreateRequestSpecification()).
 				body(TestData.addPlacePayLoad(name, language, address));	
 	}
@@ -45,7 +45,7 @@ public class AddPlaceStepDefinitions extends Utils {
 		mResponseSpec = new ResponseSpecBuilder().expectStatusCode(200).
 				expectContentType(ContentType.JSON).build();
 
-		logger.info("Inside User calls HTTP request with resource:"+ resource +" Method:"+ method);
+		logger.info("Inside User calls HTTP request using resource:"+ resource +" Method:"+ method);
   		
 		if(method.equalsIgnoreCase("POST"))
 			mResponse = mReqSpec.when().post(resourceAPI.getResource());

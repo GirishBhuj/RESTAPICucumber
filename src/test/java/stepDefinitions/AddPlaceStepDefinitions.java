@@ -45,7 +45,7 @@ public class AddPlaceStepDefinitions extends Utils {
 		mResponseSpec = new ResponseSpecBuilder().expectStatusCode(200).
 				expectContentType(ContentType.JSON).build();
 
-		logger.info("Inside User calls HTTP request using resource:"+ resource +" Method:"+ method);
+		logger.info("Inside User calls HTTP request for resource:"+ resource +" Method:"+ method);
   		
 		if(method.equalsIgnoreCase("POST"))
 			mResponse = mReqSpec.when().post(resourceAPI.getResource());
